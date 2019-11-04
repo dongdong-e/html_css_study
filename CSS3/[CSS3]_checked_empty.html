@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .chk1 {
+        padding: 100px 0;
+      }
+      .chk1 input:checked {
+        margin: 30px;
+      }
+      .chk2 input {
+        position: absolute;
+        left: -1000px;
+      }
+      .chk2 input + label:before {
+        content: "v";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid grey;
+        vertical-align: middle;
+        line-height: 10px;
+        color: transparent;
+      }
+      .chk2 input:checked + label:before {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chk1">
+      <input type="checkbox" id="a1" /><label for="a1">체크하기1</label>
+      <input type="checkbox" id="a2" /><label for="a2">체크하기2</label>
+    </div>
+    <br />
+    <div class="chk2">
+      <input type="checkbox" id="a3" /><label for="a3">체크하기1</label>
+      <input type="checkbox" id="a4" /><label for="a4">체크하기2</label>
+    </div>
+    <br /><br />
+    <div class="ra">
+      <input type="radio" id="b1" /><label for="b1">체크하기1</label>
+      <input type="radio" id="b2" /><label for="b2">체크하기2</label>
+    </div>
+  </body>
+</html>

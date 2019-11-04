@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transform: rotate(0deg);
+        transition: all 0.5s;
+      }
+      .box1:hover {
+        transform: rotate(360deg);
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transform: rotate(0deg);
+        transition: all 0.5s;
+      }
+      .box2:hover {
+        /* transform: rotateY(90deg); */
+        transform: rotateX(90deg);
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transform: scale(1);
+        transition: all 0.5s;
+      }
+      .box3:hover {
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        transform: scale(1.5);
+      }
+      .box4 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transform: skew(0deg);
+        transition: all 0.5s;
+      }
+      .box4:hover {
+        /* transform: skewX(30deg); */
+        /* transform: skewY(30deg); */
+        transform: skew(30deg);
+      }
+      .box5 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transform: translate();
+        transition: all 0.5s;
+      }
+      .box5:hover {
+        /* box의 X 길이의 50%만큼 이동, Y 길이의 10px 만큼 이동 */
+        /* transform: translateX(30px); */
+        /* transform: translateY(30px); */
+        transform: translate(50%, 10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <br /><br />
+    <div class="box2"></div>
+    <br /><br />
+    <div class="box3"></div>
+    <br /><br />
+    <div class="box4"></div>
+    <br /><br />
+    <div class="box5"></div>
+  </body>
+</html>

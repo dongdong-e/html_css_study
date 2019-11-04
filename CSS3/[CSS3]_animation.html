@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        animation-name: animation1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        /* normal: default값
+           reverse: 뒤에서 앞으로 실행
+           alternate: 앞뒤로 반복
+           alternate-reverse: 뒤앞으로 반복
+         */
+        animation-direction: alternate-reverse;
+      }
+      @keyframes animation1 {
+        /* 0% 시작 */
+        0% {
+          left: 0;
+        }
+        /* 100% 끝 */
+        100% {
+          left: 100px;
+        }
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        /* animation: 키프레임명 / 애니메이션 실행시간 / 움직임 제어 / 애니메이션 딜레이 / 반복정도 / 애니메이션 끝난 후 처리 방법 */
+        animation: animation2 1s ease 2s infinite alternate;
+      }
+      @keyframes animation2 {
+        /* 0% 시작 */
+        0% {
+          background: skyblue;
+        }
+        50% {
+          background: pink;
+        }
+        /* 100% 끝 */
+        100% {
+          background: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <br />
+    <div class="box2"></div>
+  </body>
+</html>

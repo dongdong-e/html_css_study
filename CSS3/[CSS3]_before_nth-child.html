@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .sel1:after {
+      content: "2";
+    }
+    .sel1:before {
+      content: "1";
+    }
+    .sel2 li:first-child {
+      border: 1px solid red;
+    }
+    .sel2 li:last-child {
+      border: 1px solid red;
+    }
+    /* odd, even, 2n 등 가능 */
+    /* nth-last-child(): 끝에서부터 적용 */
+    .sel2 li:nth-child(3) {
+      color: pink;
+      border: 1px solid pink;
+    }
+    .sel3 ul:first-of-type {
+      border: 1px solid red;
+    }
+    .sel3 ul:last-of-type {
+      border: 1px solid blue;
+    }
+    /* nth-last-of-type(): 끝에서부터 적용 */
+    .sel3 ul:nth-of-type(2) {
+      border: 1px solid green;
+    }
+  </style>
+  <body>
+    <div class="sel1">TEXT</div>
+    <br /><br />
+    <ul class="sel2">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <br /><br />
+    <div class="sel3">
+      <span>1</span>
+      <ul>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+      <p>5</p>
+      <div>6</div>
+      <ul>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+      <ul>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+      <dl>
+        <dt>11</dt>
+        <dd>12</dd>
+      </dl>
+      <div>13</div>
+    </div>
+  </body>
+</html>

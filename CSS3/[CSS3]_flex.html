@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      body {
+        padding: 30px;
+      }
+      ol,
+      ul {
+        border: 1px solid red;
+        padding: 20px;
+      }
+      li {
+        flex: 1;
+        border: 1px solid blue;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex li {
+        flex: 1;
+      }
+      .flex li:nth-child(1) {
+        display: flex;
+      }
+      .flex li:nth-child(2) {
+        flex: 2;
+      }
+      .flex li:nth-child(3) {
+        display: flex;
+      }
+
+      .table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+      }
+      .table li {
+        display: table-cell;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid pink;
+      }
+      div p {
+        width: 200px;
+        height: 50px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    Flex
+    <ul class="flex">
+      <li>
+        Nav 메뉴1<br />
+        메뉴2<br />
+        메뉴3<br />
+      </li>
+      <li>Contents</li>
+      <li>Side-Bar</li>
+    </ul>
+    <br /><br />
+    Table
+    <ol class="table">
+      <li>sdfdasfadsfasd</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ol>
+    <br /><br />
+    <div class="order">
+      <p>TEXT</p>
+    </div>
+  </body>
+</html>
